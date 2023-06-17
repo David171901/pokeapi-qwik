@@ -4,6 +4,7 @@ import styles from './footer.module.css';
 
 export default component$(() => {
   const serverTime = useServerTimeLoader();
+  console.log("🚀 ~ file: footer.tsx:7 ~ serverTime:", serverTime)
 
   return (
     <footer>
