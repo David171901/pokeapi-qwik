@@ -28,6 +28,11 @@ export default component$(() => {
               Client-List
             </Link>
           </li>
+          <li>
+            <Link href='/login/'>
+              Sign In
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
