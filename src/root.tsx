@@ -13,6 +13,12 @@ export default component$(() => {
    * Dont remove the `<head>` and `<body>` elements.
    */
 
+  const scriptGTM = `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GTM-P4JZT3Z9');`
+
   return (
     <QwikCityProvider>
       <head>
@@ -21,8 +27,11 @@ export default component$(() => {
         <script
           async
           type="text/partytown"
-          src="https://www.googletagmanager.com/gtag/js?id=G-P4JZT3Z9"
+          src="https://www.googletagmanager.com/gtag/js?id=GTM-P4JZT3Z9"
         />
+        <script type="text/partytown">
+          {scriptGTM}
+        </script>
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
