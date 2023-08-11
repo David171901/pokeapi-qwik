@@ -26,7 +26,7 @@ export default component$(() => {
     <>
       <span class="text-2xl">Buscador simple</span>
       <span class="text-9xl">{pokemonGame.pokemonId}</span>
-
+      <div>PUBLIC_API_URL: {import.meta.env.PUBLIC_GTM}</div>
       {/* <Link href={`/pokemon/${pokemonId.value}/`}> */}
       <div onClick$={() => goToPokemon()} class="cursor-pointer">
         <PokemonImage id={pokemonGame.pokemonId} size={250} backImage={pokemonGame.showBackImage} isVisible={pokemonGame.isPokemonVisible}></PokemonImage>
